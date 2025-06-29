@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Search App</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.14.1/simple-lightbox.min.css" />
+</head>
+
+<body>
+  <form class="form">
+    <label class="search-label">
+      <input type="text" name="search-text" placeholder="Search images..." required />
+    </label>
+    <button type="submit">Search</button>
+  </form>
+  <div class="loader is-hidden">Loading images, please wait...</div>
+<ul class="gallery">
+  <li class="gallery-item">
+    <a href="https://pixabay.com/get/largeImageURL.jpg">
+      <img src="https://pixabay.com/get/webformatURL.jpg" alt="опис зображення" loading="lazy" />
+    </a>
+    <div class="info">
+      <p><b>Likes</b> 3101</p>
+      <p><b>Views</b> 1418961</p>
+      <p><b>Comments</b> 604</p>
+      <p><b>Downloads</b> 752406</p>
+    </div>
+  </li>
+</ul>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
